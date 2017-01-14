@@ -7,7 +7,7 @@ class FrontPage extends React.Component {
       <div>
         <Header />
       </div>
-    }
+    )
   }
 
 }
