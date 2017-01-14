@@ -7,7 +7,7 @@ import authState from 'dux/authState';
 const appReducers = combineReducers({
     // routing: routeReducer,
     // panelReducer
-    authState,
+    authState
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

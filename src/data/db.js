@@ -1,0 +1,1 @@
+var DB = { test: 'test' }
