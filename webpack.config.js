@@ -1,8 +1,8 @@
 const path = require("path");
 const webpack = require('webpack');
-let minimize = process.argv.indexOf('--min') !== -1;
+// let minimize = process.argv.indexOf('--min') !== -1;
 
-var defaults = {
+module.exports = {
 	resolve: {
 	  root: path.resolve('./src'),
       // alias: { soundmanager2: 'soundmanager2/script/soundmanager2-nodebug-jsmin.js' },
