@@ -11,7 +11,7 @@ var defaults = {
 	},
     entry: './src/client.jsx',
 	  output: {
-		path: '../../../public/app/js',
+		path: './public/js',
 		filename: 'bundle.js'
 	},
 	plugins: [],
