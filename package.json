@@ -2,7 +2,7 @@
   "name": "informed-decisions",
   "version": "1.0.0",
   "description": "for people to go to for general drug information to make smarter decisions if they do intend to do drugs. Also for health organizations around the country to provide localized alert information about certain drugs/concerns.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
