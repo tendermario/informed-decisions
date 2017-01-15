@@ -8,9 +8,8 @@ class Categories extends React.Component {
     }
 
     return (
-
-	{categories}
-
+      <div>
+      </div>
     )
   }
 
