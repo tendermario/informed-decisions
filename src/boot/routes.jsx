@@ -12,7 +12,7 @@ class CreateRoutes extends React.Component {
                 <Route path='/' component={App}>
                     <IndexRoute component={FrontPage} />
                 </Route>
-                <Route path='/drug' component={App}>
+                <Route path='/drug/:id' component={App}>
                     <IndexRoute component={Drug} />
                 </Route>
 

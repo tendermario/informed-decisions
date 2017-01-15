@@ -2,6 +2,19 @@ import React from 'react';
 import Header from 'app/shared/header/index';
 
 class Drug extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      drug: {}
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      drug: DB.drugs[this.props.params.id]
+    });
+  }
+
   render() {
     return (
 
@@ -9,23 +22,23 @@ class Drug extends React.Component {
 
         <h1>Informed Decisions</h1>
 
-        <h2>Heroin</h2>
+        <h2>{ this.state.drug.name }</h2>
 
         <h3>What is it?</h3>
 
-        <p>Heroin, also known as diamorphine among other names, is an opiate typically used as a recreational drug for its euphoric effects. Medically it is occasionally used to relieve pain and as a form of opioid replacement therapy alongside counseling. Heroin is typically injected, usually into a vein; however, it can also be smoked, snorted or inhaled. Onset of effects is usually rapid and lasts for a few hours.</p>
+        <p>{ this.state.drug.description }</p>
 
         <h3>Risks</h3>
 
-        <p>Overdose, death, withdrawal symptoms.</p>
+        <p>{ this.state.drug.risks }</p>
 
         <h3>How to Take It</h3>
 
-        <p>Injection, Oral, Smoking, Insufflation, Suppository</p>
+        <p>{ this.state.drug.howto }</p>
 
         <h3>Anonymous Comments</h3>
 
-        <p>MY NAME IS MARIO AND I TRIED THIS AND FELT NOTHING.</p>
+        <p>Dont do this one.</p>
 
         <div>
           <span className="glyphicon glyphicon-map-marker" />
