@@ -38,6 +38,10 @@ var DB = {
         vancouver: {
           alerts: ['Fentynal is everywhere'],
           resources: ['http://www.londondrugs.com/', 'http://www.vch.ca/your-health/health-topics/supervised-injection/supervised-injection', 'https://en.wikipedia.org/wiki/Downtown_Eastside']
+        },
+        kelowna: {
+          alerts: [],
+          resources: []
         }
       }
     }

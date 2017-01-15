@@ -17,7 +17,8 @@ module.exports = {
 	plugins: [],
 	devServer: {
 		inline: false,
-		port: 3333
+		port: 3333,
+    historyApiFallback: true
 	},
 	module: {
 		loaders: [
