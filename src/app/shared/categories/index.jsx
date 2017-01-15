@@ -1,15 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class Categories extends React.Component {
 
   render() {
-    // const categories = DB.drugs.map(drug => {
-    //   return <Category>{drug.name}</Category>
-    // }
+    const categories = DB.drugs.map((drug, index) => {
+       return <Category key={index} index={index}>{drug.name}</Category>
+    }
 
     return (
       <div>
-	     Drugs
+	{categories}
       </div>
     )
   }
@@ -21,7 +22,7 @@ export default Categories;
 
 const Category = props => {
   return (
-    <div className="drug-category">{props.children}</div>
+    <Link to=`/drug/{props.index}`>{props.children}</Link>
   )
 
 }
