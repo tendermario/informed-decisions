@@ -9,7 +9,7 @@ class Categories extends React.Component {
 
     return (
       <div>
-	     {/*categories*/}
+	     Drugs
       </div>
     )
   }
@@ -20,7 +20,6 @@ export default Categories;
 
 
 const Category = props => {
-
   return (
     <div className="drug-category">{props.children}</div>
   )

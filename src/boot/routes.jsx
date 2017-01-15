@@ -11,9 +11,9 @@ class CreateRoutes extends React.Component {
             <Router history={browserHistory}>
                 <Route path='/' component={App}>
                     <IndexRoute component={FrontPage} />
-
-                    <Route path="drugs" component={Drug} />
-
+                </Route>
+                <Route path='/drug' component={App}>
+                    <IndexRoute component={Drug} />
                 </Route>
 
             </Router>
