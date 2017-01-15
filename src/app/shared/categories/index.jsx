@@ -3,12 +3,13 @@ import React from 'react';
 class Categories extends React.Component {
 
   render() {
-    const categories = DB.drugs.map(drug => {
-      return <Category>{drug.name}</Category>
-    }
+    // const categories = DB.drugs.map(drug => {
+    //   return <Category>{drug.name}</Category>
+    // }
 
     return (
       <div>
+	     {/*categories*/}
       </div>
     )
   }
